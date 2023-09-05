@@ -34,10 +34,10 @@ cc_prebuilt_library_static {
     vendor: true,
     arch: {
         arm: {
-            srcs: ["common/gen_mesh/linux/genMesh_static_32bit/libgenMeshLib.a"],
+            srcs: ["common/gen_mesh/android/genMesh_static_32bit/libgenMeshLib.a"],
         },
         arm64: {
-            srcs: ["common/gen_mesh/linux/genMesh_static_64bit/libgenMeshLib.a"],
+            srcs: ["common/gen_mesh/android/genMesh_static_64bit/libgenMeshLib.a"],
         },
     },
 }
@@ -89,7 +89,6 @@ cc_library_shared {
         "libutils",
         "libcutils",
         "liblog",
-        "libc++_shared",
     ],
 
     srcs: [
