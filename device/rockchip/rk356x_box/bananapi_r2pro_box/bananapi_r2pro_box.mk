@@ -86,11 +86,12 @@ endif
 #
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=213 \
-	ro.wifi.sleep.power.down=true \
+	ro.wifi.sleep.power.down=false \
 	persist.wifi.sleep.delay.ms=0 \
-	persist.bt.power.down=true \
+	persist.bt.power.down=false \
 	persist.usb.show=1 \
-	persist.usb.boot=host \
+	persist.usb.boot=peripheral \
+	ro.debuggable=1 \
 	ro.no_battery_thermal_temp=true
 
 # TV Input HAL

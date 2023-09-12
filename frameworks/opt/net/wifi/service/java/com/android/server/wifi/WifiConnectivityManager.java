@@ -157,7 +157,7 @@ public class WifiConnectivityManager {
     private boolean mDbg = false;
     private boolean mVerboseLoggingEnabled = false;
     private boolean mWifiEnabled = false;
-    private boolean mAutoJoinEnabled = false; // disabled by default, enabled by external triggers
+    private boolean mAutoJoinEnabled = true; // disabled by default, enabled by external triggers
     private boolean mRunning = false;
     private boolean mScreenOn = false;
     private int mWifiState = WIFI_STATE_UNKNOWN;

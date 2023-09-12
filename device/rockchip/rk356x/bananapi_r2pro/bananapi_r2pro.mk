@@ -72,7 +72,7 @@ PRODUCT_NAME := bananapi_r2pro
 PRODUCT_DEVICE := bananapi_r2pro
 PRODUCT_BRAND := Bananapi
 PRODUCT_MODEL := bananapi_r2pro
-PRODUCT_MANUFACTURER := Sinovoip
+PRODUCT_MANUFACTURER := acovo
 PRODUCT_AAPT_PREF_CONFIG := mdpi
 
 ifeq ($(BOARD_HAS_FACTORY_TEST),true)
@@ -84,11 +84,11 @@ endif
 #
 PRODUCT_PROPERTY_OVERRIDES += \
 	ro.sf.lcd_density=213 \
-	ro.wifi.sleep.power.down=true \
+	ro.wifi.sleep.power.down=false \
 	persist.wifi.sleep.delay.ms=0 \
-	persist.bt.power.down=true \
+	persist.bt.power.down=false \
 	persist.usb.show=1 \
-	persist.usb.boot=host \
+	persist.usb.boot=peripheral \
 	ro.no_battery_thermal_temp=true
 
 PRODUCT_PROPERTY_OVERRIDES += \
