@@ -17,6 +17,7 @@
 # This is a build configuration that just contains a list of languages, with
 # en_US set as the default language.
 PRODUCT_LOCALES := \
+        zh_CN \
         en_US \
         af_ZA \
         am_ET \
@@ -99,7 +100,6 @@ PRODUCT_LOCALES := \
         ur_PK \
         uz_UZ \
         vi_VN \
-        zh_CN \
         zh_HK \
         zh_TW \
         zu_ZA \

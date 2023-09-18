@@ -53,4 +53,12 @@ if [ -n "$BUILD_THUMBPRINT" ] ; then
   echo "ro.build.thumbprint=$BUILD_THUMBPRINT"
 fi
 
+#Add default locale and timezone
+echo "persist.sys.language=zh"         
+echo "persist.sys.country=CN"         
+echo "persist.sys.localevar="         
+echo "persist.sys.timezone=Asia/Shanghai"         
+echo "ro.product.locale.language=zh"         
+echo "ro.product.locale.region=CN"
+
 echo "# end build properties"
