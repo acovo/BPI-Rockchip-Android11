@@ -124,3 +124,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # force app landscape
 #PRODUCT_PROPERTY_OVERRIDES += \
 #	persist.sys.app.rotation=force_land
+
+# change default name
+PRODUCT_PROPERTY_OVERRIDES += \
+	ro.product.name=bpi_r2pro
