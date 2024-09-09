@@ -45,9 +45,12 @@ PRODUCT_COPY_FILES += \
 	$(LOCAL_PATH)/rtkbt.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/rtkbt.conf
 endif
 
+PRODUCT_PACKAGES += RustDesk
+
 #For RK3568 EC20
 ifeq ($(strip $(BOARD_QUECTEL_RIL)),true)
-PRODUCT_PACKAGES += rild
+PRODUCT_PACKAGES += \
+	rild
 
 PRODUCT_COPY_FILES += \
 	vendor/bananapi/modem/libquectel-ril/arm64-v8a/libreference-ril.so:vendor/lib64/libquectel-ril.so \
